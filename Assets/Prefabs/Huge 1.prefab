@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3708967011268516663}
   - component: {fileID: 3708967011268516664}
   - component: {fileID: 3708967011268516665}
-  - component: {fileID: 3708967011268516666}
   m_Layer: 0
   m_Name: Huge 1
   m_TagString: obstecle
@@ -109,16 +108,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.66, y: 4.38}
   m_EdgeRadius: 0
---- !u!114 &3708967011268516666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3708967011268516662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b08a586886c12689923025b948778ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectToDestroy: {fileID: 3708967011268516662}

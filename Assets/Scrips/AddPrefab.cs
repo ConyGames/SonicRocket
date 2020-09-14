@@ -5,8 +5,6 @@ public class AddPrefab : MonoBehaviour
     public GameObject LocalPlayer;
     void Start()
     {
-        Instantiate(LocalPlayer, Vector3.zero, transform.rotation);
+        GameObject player = Instantiate(LocalPlayer, transform.position, transform.rotation);
     }
-
-
 }

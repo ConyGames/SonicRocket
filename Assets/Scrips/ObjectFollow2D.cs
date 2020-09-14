@@ -5,13 +5,14 @@
 
 public class ObjectFollow2D : MonoBehaviour
 {
-    [SerializeField] private Transform ObjectToFollow;
+    private Transform ObjectToFollow;
     [SerializeField] private Vector3 Offset = new Vector3();
     public float FollowSPeed;
     private Vector3 FollowPositon;
 
     void Start(){
         FollowPositon = new Vector3();
+        ObjectToFollow = GameObject.FindGameObjectWithTag("player").GetComponent<Transform>();
     }
 
     // Update is called once per frame

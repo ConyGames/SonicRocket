@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-enum MoveSideWays : int {
+public enum MoveSideWays : int {
     None = 0,
     MoveLeft,
     MoveRight,
@@ -10,15 +10,14 @@ public class ShipMovement : MonoBehaviour
 {
     private Rigidbody2D LocalPlayer;
     private Vector2 Force; // force for player to move
-    [SerializeField] ShipData ShipData; // shipdata to handle ship
-    private MoveSideWays moveDirection; // The Direction to change the direction
+    [SerializeField] private ShipData ShipData; // shipdata to handle ship
+    public MoveSideWays moveDirection; // The Direction to change the direction
     
 
     void Start( ){
         Force = new Vector2(); // force for player to move
         moveDirection = MoveSideWays.None; // The Direction to change the direction
-        LocalPlayer = GetComponent<Rigidbody2D>(); // Oun object rigid body
-         
+        LocalPlayer = gameObject.GetComponent<Rigidbody2D>(); // Oun object rigid body
     }
 
     void Update( ){
@@ -60,24 +59,6 @@ public class ShipMovement : MonoBehaviour
                     Vector3.forward *  transform.position.z;
         }
     }
-    /*
-     * Button Functions to move the ship
-     */
-    public void MoveLeft( bool pressed ){
-        if (pressed){
-            moveDirection = MoveSideWays.MoveLeft;
-        }else {
-            moveDirection = MoveSideWays.None;
-        }
-        
-    }
-
-    public void MoveRight( bool pressed ){
-        if (pressed){
-            moveDirection = MoveSideWays.MoveRight;
-        }else {
-            moveDirection = MoveSideWays.None;
-        }
-    }
+    
     // End Button Functions
 }

@@ -38,9 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\FinishLine.cs" />
      <Compile Include="Assets\Scrips\AddPrefab.cs" />
-     <Compile Include="Assets\Scrips\CollitionDitector.cs" />
+     <Compile Include="Assets\Scrips\GameDatas.cs" />
      <Compile Include="Assets\Scrips\ObjectFollow2D.cs" />
-     <Compile Include="Assets\Scrips\ShipData.cs" />
+     <Compile Include="Assets\Scrips\PlayerCollitionSystem.cs" />
+     <Compile Include="Assets\Scrips\PlayerDamageCal.cs" />
      <Compile Include="Assets\Scrips\ShipMovement.cs" />
      <Compile Include="Assets\Scrips\UIButtonsScript.cs" />
      <None Include="Assets\2D Space Kit\Ships and Stations\Rendering Tip.txt" />
