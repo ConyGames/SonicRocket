@@ -26,6 +26,9 @@ public class ObjectFollow2D : MonoBehaviour
     }
 
     void GetCameraPosition(){
+        if (!ObjectToFollow)
+            return;
+            
         FollowPositon = Vector3.right * ObjectToFollow.position.x+
                         Vector3.up * ObjectToFollow.position.y+
                         Vector3.forward * transform.position.z;
